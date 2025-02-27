@@ -13,7 +13,7 @@ export const createUser = async ({
 
     const user = await userModel.create({
         email,
-        password: hashPassword
+        password: hashPassword,
     });
 
     return user;
